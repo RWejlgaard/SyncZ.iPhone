@@ -4,22 +4,30 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--SyncZ-->
         <scene sceneID="amj-Am-Npr">
             <objects>
-                <navigationController navigationBarHidden="YES" id="Atz-XY-ZmZ" sceneMemberID="viewController">
+                <navigationController id="Atz-XY-ZmZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="SyncZ" id="dCR-jD-1KK"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mgH-XJ-9Nc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="vAE-x6-xXr">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="jPx-cf-S2c"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Yt2-mb-AFI"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45M-JF-xIS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-794" y="199"/>
+            <point key="canvasLocation" x="-930" y="487"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -33,10 +41,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ro6-Lh-rcL">
+                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ro6-Lh-rcL">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1cg-Fh-VRB">
+                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="M3g-aL-FXf" userLabel="bg" customClass="BlurImageView" customModule="SyncZ_iPhone" customModuleProvider="target">
+                                        <rect key="frame" x="-8" y="-9" width="429" height="755"/>
+                                    </imageView>
+                                    <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1cg-Fh-VRB" customClass="CSAnimationView">
                                         <rect key="frame" x="53" y="203" width="309" height="329"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" background="Text" translatesAutoresizingMaskIntoConstraints="NO" id="5Zi-Ou-q3n">
@@ -60,64 +71,83 @@
                                                 <state key="normal" title="Log in" backgroundImage="BtnTexture">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="che-Xq-KPl" kind="push" id="nrZ-Ho-dpy"/>
+                                                    <action selector="lognLoginBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qzQ-U4-8SP"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please log in to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABy-70-71x">
                                                 <rect key="frame" x="98" y="19" width="112" height="23"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SyncZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de1-hJ-CQ5">
-                                                <rect key="frame" x="86" y="50" width="137" height="63"/>
-                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="41"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SyncZ" translatesAutoresizingMaskIntoConstraints="NO" id="zPN-Ti-OnX">
+                                                <rect key="frame" x="69" y="47" width="171" height="89"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="type" value="zoomOut"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="SHu-tY-yPy"/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="loginUsernameText" destination="1cg-Fh-VRB" id="lce-Gb-Yfi"/>
+                        <segue destination="7DN-cB-mer" kind="push" identifier="mainPage" id="0qZ-JE-CMy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-187" y="199"/>
+            <point key="canvasLocation" x="-395" y="487"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="Hgi-3S-hdQ">
+        <scene sceneID="xud-Db-MVq">
             <objects>
-                <viewController id="che-Xq-KPl" sceneMemberID="viewController">
+                <viewController id="7DN-cB-mer" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rmP-S3-Fw2"/>
-                        <viewControllerLayoutGuide type="bottom" id="uVZ-eK-ihf"/>
+                        <viewControllerLayoutGuide type="top" id="a7b-ov-cQV"/>
+                        <viewControllerLayoutGuide type="bottom" id="533-1W-d3x"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4UI-00-QTS">
+                    <view key="view" contentMode="scaleToFill" id="zxw-xL-3ba">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="IMx-8d-qGa"/>
+                    <navigationItem key="navigationItem" id="uBU-Cm-YDU">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="SRo-Ie-0Gg">
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HA4-oP-JBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="29C-uE-Fwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="295" y="199"/>
+            <point key="canvasLocation" x="85" y="487"/>
         </scene>
     </scenes>
     <resources>
         <image name="BtnTexture" width="1000" height="512"/>
+        <image name="SyncZ" width="1862" height="855"/>
         <image name="Text" width="2512" height="512"/>
+        <image name="bg" width="2880" height="1800"/>
     </resources>
 </document>

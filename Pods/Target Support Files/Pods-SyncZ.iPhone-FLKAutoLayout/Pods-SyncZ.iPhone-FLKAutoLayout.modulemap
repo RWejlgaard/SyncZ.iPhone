@@ -1,0 +1,6 @@
+framework module FLKAutoLayout {
+  umbrella header "Pods-SyncZ.iPhone-FLKAutoLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}

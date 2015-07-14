@@ -1,0 +1,6 @@
+framework module Pods_SyncZ_iPhone {
+  umbrella header "Pods-SyncZ.iPhone-umbrella.h"
+
+  export *
+  module * { export * }
+}

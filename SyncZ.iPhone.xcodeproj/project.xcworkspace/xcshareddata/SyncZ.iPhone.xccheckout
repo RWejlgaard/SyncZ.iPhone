@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A362B851-BDA9-4724-BB90-342096B2105E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SyncZ.iPhone</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>59C769C1C57F02E7D2426B0E5D1694822ED12013</key>
+		<string>https://github.com/RWejlgaard/SyncZ.iPhone.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SyncZ.iPhone.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>59C769C1C57F02E7D2426B0E5D1694822ED12013</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/RWejlgaard/SyncZ.iPhone.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>59C769C1C57F02E7D2426B0E5D1694822ED12013</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>59C769C1C57F02E7D2426B0E5D1694822ED12013</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SyncZ.iPhone</string>
+		</dict>
+	</array>
+</dict>
+</plist>

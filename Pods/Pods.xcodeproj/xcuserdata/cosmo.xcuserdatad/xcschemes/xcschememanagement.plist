@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-SyncZ.iPhone-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SyncZ.iPhone-FLKAutoLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SyncZ.iPhone-ORStackView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SyncZ.iPhone-SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SyncZ.iPhone.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1584377A7B0FEE119406889E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>37D62DF9920111086AB5D00B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>58F547FF6C78F6D5C375D040</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CCD2038570D975503D15AB00</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D81125543008348381C113ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

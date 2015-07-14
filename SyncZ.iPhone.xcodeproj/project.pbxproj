@@ -13,6 +13,7 @@
 		6D773AF71B5578C000684557 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D773AF61B5578C000684557 /* Images.xcassets */; };
 		6D773AFA1B5578C000684557 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D773AF81B5578C000684557 /* LaunchScreen.xib */; };
 		6D773B061B5578C000684557 /* SyncZ_iPhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D773B051B5578C000684557 /* SyncZ_iPhoneTests.swift */; };
+		8EA00578AFD02D6F0DDD24E2 /* Pods_SyncZ_iPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9610F589483BA7265A54C67D /* Pods_SyncZ_iPhone.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		661DAADFCA27236077AE904D /* Pods-SyncZ.iPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyncZ.iPhone.release.xcconfig"; path = "Pods/Target Support Files/Pods-SyncZ.iPhone/Pods-SyncZ.iPhone.release.xcconfig"; sourceTree = "<group>"; };
 		6D773AEA1B5578C000684557 /* SyncZ.iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyncZ.iPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D773AEE1B5578C000684557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D773AEF1B5578C000684557 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		6D773AFF1B5578C000684557 /* SyncZ.iPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyncZ.iPhoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D773B041B5578C000684557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D773B051B5578C000684557 /* SyncZ_iPhoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncZ_iPhoneTests.swift; sourceTree = "<group>"; };
+		9610F589483BA7265A54C67D /* Pods_SyncZ_iPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SyncZ_iPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7EB7FBF0280C3AC6A4F2465 /* Pods-SyncZ.iPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyncZ.iPhone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SyncZ.iPhone/Pods-SyncZ.iPhone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA00578AFD02D6F0DDD24E2 /* Pods_SyncZ_iPhone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2188E1B87A2168B3C02C7648 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9610F589483BA7265A54C67D /* Pods_SyncZ_iPhone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6D773AE11B5578C000684557 = {
 			isa = PBXGroup;
 			children = (
 				6D773AEC1B5578C000684557 /* SyncZ.iPhone */,
 				6D773B021B5578C000684557 /* SyncZ.iPhoneTests */,
 				6D773AEB1B5578C000684557 /* Products */,
+				756AA5CF4EDAE046EF6DE77C /* Pods */,
+				2188E1B87A2168B3C02C7648 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +127,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		756AA5CF4EDAE046EF6DE77C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7EB7FBF0280C3AC6A4F2465 /* Pods-SyncZ.iPhone.debug.xcconfig */,
+				661DAADFCA27236077AE904D /* Pods-SyncZ.iPhone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D773B091B5578C000684557 /* Build configuration list for PBXNativeTarget "SyncZ.iPhone" */;
 			buildPhases = (
+				B469E3B4B5516D7058AB2D35 /* Check Pods Manifest.lock */,
 				6D773AE61B5578C000684557 /* Sources */,
 				6D773AE71B5578C000684557 /* Frameworks */,
 				6D773AE81B5578C000684557 /* Resources */,
+				26E71BBC9654AF05CFC2810A /* Embed Pods Frameworks */,
+				C482E68C1BC298716546F48B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,6 +183,7 @@
 		6D773AE21B5578C000684557 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Singularity;
 				TargetAttributes = {
@@ -206,6 +234,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26E71BBC9654AF05CFC2810A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SyncZ.iPhone/Pods-SyncZ.iPhone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B469E3B4B5516D7058AB2D35 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C482E68C1BC298716546F48B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SyncZ.iPhone/Pods-SyncZ.iPhone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D773AE61B5578C000684557 /* Sources */ = {
@@ -338,6 +414,7 @@
 		};
 		6D773B0A1B5578C000684557 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7EB7FBF0280C3AC6A4F2465 /* Pods-SyncZ.iPhone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SyncZ.iPhone/Info.plist;
@@ -348,6 +425,7 @@
 		};
 		6D773B0B1B5578C000684557 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 661DAADFCA27236077AE904D /* Pods-SyncZ.iPhone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SyncZ.iPhone/Info.plist;
@@ -409,6 +487,7 @@
 				6D773B0B1B5578C000684557 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D773B0C1B5578C000684557 /* Build configuration list for PBXNativeTarget "SyncZ.iPhoneTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +496,7 @@
 				6D773B0E1B5578C000684557 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
