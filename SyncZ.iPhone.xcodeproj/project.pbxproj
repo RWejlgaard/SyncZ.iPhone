@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D773AF01B5578C000684557 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D773AEF1B5578C000684557 /* AppDelegate.swift */; };
+		6D773AF21B5578C000684557 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D773AF11B5578C000684557 /* ViewController.swift */; };
+		6D773AF51B5578C000684557 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D773AF31B5578C000684557 /* Main.storyboard */; };
+		6D773AF71B5578C000684557 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D773AF61B5578C000684557 /* Images.xcassets */; };
+		6D773AFA1B5578C000684557 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D773AF81B5578C000684557 /* LaunchScreen.xib */; };
+		6D773B061B5578C000684557 /* SyncZ_iPhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D773B051B5578C000684557 /* SyncZ_iPhoneTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D773B001B5578C000684557 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D773AE21B5578C000684557 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D773AE91B5578C000684557;
+			remoteInfo = SyncZ.iPhone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D773AEA1B5578C000684557 /* SyncZ.iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyncZ.iPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D773AEE1B5578C000684557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D773AEF1B5578C000684557 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D773AF11B5578C000684557 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6D773AF41B5578C000684557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D773AF61B5578C000684557 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6D773AF91B5578C000684557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6D773AFF1B5578C000684557 /* SyncZ.iPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyncZ.iPhoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D773B041B5578C000684557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D773B051B5578C000684557 /* SyncZ_iPhoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncZ_iPhoneTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D773AE71B5578C000684557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D773AFC1B5578C000684557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D773AE11B5578C000684557 = {
+			isa = PBXGroup;
+			children = (
+				6D773AEC1B5578C000684557 /* SyncZ.iPhone */,
+				6D773B021B5578C000684557 /* SyncZ.iPhoneTests */,
+				6D773AEB1B5578C000684557 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D773AEB1B5578C000684557 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D773AEA1B5578C000684557 /* SyncZ.iPhone.app */,
+				6D773AFF1B5578C000684557 /* SyncZ.iPhoneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D773AEC1B5578C000684557 /* SyncZ.iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				6D773AEF1B5578C000684557 /* AppDelegate.swift */,
+				6D773AF11B5578C000684557 /* ViewController.swift */,
+				6D773AF31B5578C000684557 /* Main.storyboard */,
+				6D773AF61B5578C000684557 /* Images.xcassets */,
+				6D773AF81B5578C000684557 /* LaunchScreen.xib */,
+				6D773AED1B5578C000684557 /* Supporting Files */,
+			);
+			path = SyncZ.iPhone;
+			sourceTree = "<group>";
+		};
+		6D773AED1B5578C000684557 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D773AEE1B5578C000684557 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D773B021B5578C000684557 /* SyncZ.iPhoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D773B051B5578C000684557 /* SyncZ_iPhoneTests.swift */,
+				6D773B031B5578C000684557 /* Supporting Files */,
+			);
+			path = SyncZ.iPhoneTests;
+			sourceTree = "<group>";
+		};
+		6D773B031B5578C000684557 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D773B041B5578C000684557 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D773AE91B5578C000684557 /* SyncZ.iPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D773B091B5578C000684557 /* Build configuration list for PBXNativeTarget "SyncZ.iPhone" */;
+			buildPhases = (
+				6D773AE61B5578C000684557 /* Sources */,
+				6D773AE71B5578C000684557 /* Frameworks */,
+				6D773AE81B5578C000684557 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SyncZ.iPhone;
+			productName = SyncZ.iPhone;
+			productReference = 6D773AEA1B5578C000684557 /* SyncZ.iPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D773AFE1B5578C000684557 /* SyncZ.iPhoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D773B0C1B5578C000684557 /* Build configuration list for PBXNativeTarget "SyncZ.iPhoneTests" */;
+			buildPhases = (
+				6D773AFB1B5578C000684557 /* Sources */,
+				6D773AFC1B5578C000684557 /* Frameworks */,
+				6D773AFD1B5578C000684557 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D773B011B5578C000684557 /* PBXTargetDependency */,
+			);
+			name = SyncZ.iPhoneTests;
+			productName = SyncZ.iPhoneTests;
+			productReference = 6D773AFF1B5578C000684557 /* SyncZ.iPhoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D773AE21B5578C000684557 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Singularity;
+				TargetAttributes = {
+					6D773AE91B5578C000684557 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					6D773AFE1B5578C000684557 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 6D773AE91B5578C000684557;
+					};
+				};
+			};
+			buildConfigurationList = 6D773AE51B5578C000684557 /* Build configuration list for PBXProject "SyncZ.iPhone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D773AE11B5578C000684557;
+			productRefGroup = 6D773AEB1B5578C000684557 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D773AE91B5578C000684557 /* SyncZ.iPhone */,
+				6D773AFE1B5578C000684557 /* SyncZ.iPhoneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D773AE81B5578C000684557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D773AF51B5578C000684557 /* Main.storyboard in Resources */,
+				6D773AFA1B5578C000684557 /* LaunchScreen.xib in Resources */,
+				6D773AF71B5578C000684557 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D773AFD1B5578C000684557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D773AE61B5578C000684557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D773AF21B5578C000684557 /* ViewController.swift in Sources */,
+				6D773AF01B5578C000684557 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D773AFB1B5578C000684557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D773B061B5578C000684557 /* SyncZ_iPhoneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D773B011B5578C000684557 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D773AE91B5578C000684557 /* SyncZ.iPhone */;
+			targetProxy = 6D773B001B5578C000684557 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6D773AF31B5578C000684557 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D773AF41B5578C000684557 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D773AF81B5578C000684557 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D773AF91B5578C000684557 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D773B071B5578C000684557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D773B081B5578C000684557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D773B0A1B5578C000684557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SyncZ.iPhone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6D773B0B1B5578C000684557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SyncZ.iPhone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6D773B0D1B5578C000684557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SyncZ.iPhoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SyncZ.iPhone.app/SyncZ.iPhone";
+			};
+			name = Debug;
+		};
+		6D773B0E1B5578C000684557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SyncZ.iPhoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SyncZ.iPhone.app/SyncZ.iPhone";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D773AE51B5578C000684557 /* Build configuration list for PBXProject "SyncZ.iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D773B071B5578C000684557 /* Debug */,
+				6D773B081B5578C000684557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D773B091B5578C000684557 /* Build configuration list for PBXNativeTarget "SyncZ.iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D773B0A1B5578C000684557 /* Debug */,
+				6D773B0B1B5578C000684557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6D773B0C1B5578C000684557 /* Build configuration list for PBXNativeTarget "SyncZ.iPhoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D773B0D1B5578C000684557 /* Debug */,
+				6D773B0E1B5578C000684557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D773AE21B5578C000684557 /* Project object */;
+}
